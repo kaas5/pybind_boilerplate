@@ -1,5 +1,7 @@
 #pragma once
 
+//namespace py = pybind11;
+
 class Vector2{
     float gx;
     float gy;
@@ -30,3 +32,4 @@ class Vector2{
         Vector2* Div(float c);
         Vector2* Div(Vector2 v);
 };
+

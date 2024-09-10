@@ -1,5 +1,6 @@
 #include <pybind11/pybind11.h>
 #include <mijnlib.h>
+#include <render.h>
 
 namespace py = pybind11;
 
@@ -37,6 +38,11 @@ PYBIND11_PLUGIN(mijnlib) {
                 return "<vector2(" + std::to_string(a.X()) + ", " + std::to_string(a.Y()) + ")>";
             }
         );
+
+    py::class_<Render>(m, "render")
+        .def(py::init<>())
+        //.def("draw", &Render::Draw, py::return_value_policy::reference, "Magische functie")
+        .def("set_draw_list", &Render::SetDrawList, "iets");
 
         //.def("cpp_function", &Vector2::cppmult, "A function which multiplies two numbers");
     

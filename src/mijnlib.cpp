@@ -90,3 +90,6 @@ Vector2* Vector2::Div(Vector2 v){
 	gy /= v.Y();
 	return this;
 }
+
+
+
