@@ -1,0 +1,4 @@
+bouwen van python module
+python setup.py build
+
+Alle cpp en headers in /lib plaatsen, voeg cpp files toe in CMakeLists.txt add_library!
